@@ -1,0 +1,43 @@
+{
+  "name": "anyscript",
+  "version": "1.0.2",
+  "description": "js工具函数",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "typings": "types/index.d.ts",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  },
+  "homepage": "https://github.com/haijee/anyscript#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haijee/anyscript.git"
+  },
+  "bugs": {
+    "url": "https://github.com/haijee/anyscript/issues"
+  },
+  "keywords": [
+    "工具函数",
+    "javascript"
+  ],
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "dependencies": {
+    "typescript": "^5.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.10"
+  },
+
+  "author": "haijee",
+  "license": "ISC"
+ 
+}
