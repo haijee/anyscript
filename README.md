@@ -5,6 +5,6 @@
 # usage
 
 ```
-import {} from 'anyscript'
+import { test } from 'anyscript'
 
 ```
