@@ -1,14 +1,13 @@
 {
   "name": "anyscript",
-  "version": "1.0.2",
-  "description": "js工具函数",
+  "version": "1.2.0",
+  "description": "前端常用javascript函数工具库",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
-    "dev": "tsc --watch",
-    "build": "tsc",
+    "build": "rollup --config",
     "prepublishOnly": "npm run build"
   },
-  "typings": "types/index.d.ts",
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
@@ -22,7 +21,8 @@
     "url": "https://github.com/haijee/anyscript/issues"
   },
   "keywords": [
-    "工具函数",
+    "browser",
+    "toolkit",
     "javascript"
   ],
   "files": [
@@ -31,13 +31,11 @@
     "README.md"
   ],
   "dependencies": {
-    "typescript": "^5.0.2"
   },
   "devDependencies": {
-    "@types/node": "^18.15.10"
+    "rollup": "^4.6.0",
+    "@rollup/plugin-terser": "^0.4.4"
   },
-
-  "author": "haijee",
-  "license": "ISC"
- 
+  "author": "haijee@qq.com",
+  "license": "MIT"
 }
